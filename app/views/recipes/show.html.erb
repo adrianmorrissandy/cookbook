@@ -1,0 +1,17 @@
+   <h3>Recipe Page</h3>
+
+   <div><%= link_to(@recipe.name, @recipe) %></div>
+   <div><%= @recipe.course %></div>
+   <div><%= @recipe.cooktime %></div>
+   <div><%= @recipe.servingtime %></div>
+   <div><%= @recipe.instructions %></div>
+   <div><%= image_tag @recipe.image, :class => "indeximage" %></div>
+
+      <br><br>
+
+
+   <%= @book %>
+   <%= image_tag @recipe.book.image, :class => 'bookimages' %>
+
+   <%= link_to 'Delete', @recipe, :method => :delete, :confirm => 'Are you sure?'  %>
+   <%= link_to 'Edit', edit_recipe_path(@recipe)  %>

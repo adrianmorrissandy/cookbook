@@ -1,0 +1,17 @@
+<body class="indexbody">
+<header>
+<h2>COOKBOOKS GALORE</h2>
+</header>
+<ol>
+<% @books.each do |book| %>
+<div>
+  <ul>
+   <p><%= link_to(book.title, book) %></p>
+   <div><%= book.cuisine %></div>
+   <div><%= book.chef %></div>
+   <div><%= image_tag book.image, :class => "indeximage" %></div>
+  </ul>
+</div>
+<% end %>
+</ol>
+</body>

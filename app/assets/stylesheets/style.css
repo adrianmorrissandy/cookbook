@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
+
+#main-nav
+{
+  background-color: #47D9BF;
+  text-align: center;
+}
+
+*{
+
+   font-family: 'Goudy Bookletter 1911', serif;
+   color: #003056;
+
+}
+
+.indexbody
+{
+  margin:50px 0px; padding:0px;
+  text-align:center;
+}
+
+.showbody
+{
+  margin:50px 0px; padding:0px;
+  text-align:center;
+}
+
+.bookimages
+{
+  width: 150px;
+  height: 150px;
+}
+
+.indeximage
+{
+  width: 600px;
+  border: #04518C solid 3px;
+}
+
+.recipeimages
+{
+  width: 100px;
+  height: 100px;
+}
+
+.ingredientimages
+{
+ width: 400px;
+}
+
+body
+{
+ background-color: #00A1D9;
+}

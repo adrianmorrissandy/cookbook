@@ -1,0 +1,16 @@
+<h2>RECIPES GALORE</h2>
+</header>
+<ol>
+<% @recipe.each do |recipe| %>
+<div>
+  <ul>
+   <p><%= link_to(recipe.name, recipe) %></p>
+   <div><%= recipe.course %></div>
+   <div><%= recipe.cooktime %></div>
+   <div><%= recipe.servingtime %></div>
+   <div><%= recipe.instructions %></div>
+   <div><%= image_tag recipe.image, :class => "indeximage" %></div>
+  </ul>
+</div>
+<% end %>
+</ol>

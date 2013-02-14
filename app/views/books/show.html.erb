@@ -1,0 +1,26 @@
+
+   <h3>Books Page</h3>
+   <body class="showbody">
+   <%= link_to(@book.title, @book) %>
+   <%= @book.cuisine %>
+   <%= @book.chef %>
+   <%= image_tag @book.image, :class =>'bookimages' %>
+
+   <br><Br>
+
+   <% @book.recipes.each do |recipe| %>
+   <%= recipe.name %>
+   <%= image_tag recipe.image, :class => 'recipeimages' %>
+
+   <br><br>
+
+   <% recipe.ingredients.each do |ingredient| %>
+    <%= ingredient.name %>
+    <%= image_tag ingredient.image, :class => 'ingredientimages' %>
+
+   <% end %>
+   <% end %>
+
+   <%= link_to 'Delete', @book, :method => :delete, :confirm => 'Are you sure?'  %>
+   <%= link_to 'Edit', edit_book_path(@book)   %>
+ </body>
